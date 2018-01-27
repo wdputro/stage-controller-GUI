@@ -40,7 +40,7 @@ matlab MATLAB\ 2017a\ and\ above/controllerApp.mlapp
 ```
 This will then open the `App Designer` window.
 
-![Design view of the app](stage-controller-GUI/screenshots/2017a and above/p1.png)
+![Design view of the app](https://github.com/wdputro/stage-controller-GUI/blob/master/screenshots/2017a%20and%20above/p1.png?raw=true)
 
 #### Changing Signal Generator
 1. Change the DG535 swith to the name of your device
