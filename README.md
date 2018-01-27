@@ -3,7 +3,7 @@
 # Stage-controller Dashboard
 > a starting point to control your hardware through MATLAB GUI
 
-This is a GUI template to get you up and running connecting and controlling hardware immediately.
+This is a GUI template to get you up and running connecting and controlling hardware immediately (screenshots below).
 
 This code comes with connection code for:
 - three C-663 Step controller from _Physik Intrumente_ (for XYZ scan)
