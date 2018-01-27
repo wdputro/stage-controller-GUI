@@ -78,5 +78,4 @@ Be wild. Add other hardwares. Create another page for your own research or need 
 If you find a bug or want to request a new feature, feel free to open an issue.
 
 ## Licensing
-
-"The code in this project is licensed under [MIT license](https://github.com/feathericons/feather/blob/master/LICENSE)."
+Stage Controller GUI is licensed under MIT license. Check the [LICENSE](https://github.com/feathericons/feather/blob/master/LICENSE) file for details.
