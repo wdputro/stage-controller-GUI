@@ -33,10 +33,10 @@ Afterwards, proceed according to your MATLAB version.
 Since this is mainly a GUI template for your distinct system, we need to configure the connection to each hardware.
 
 ### MATLAB 2017a and newer
-Open the `controllerApp.mlapp` file. Either from MATLAB by clicking the file, or type this directly in your terminal:
+Open the `controllerApp.mlapp` file. Either from MATLAB by clicking the file, or type this directly in your MATLAB command window:
 
-```shell
-matlab MATLAB\ 2017a\ and\ above/controllerApp.mlapp
+```Matlab
+controllerApp.mlapp
 ```
 This will then open the `App Designer` window.
 
@@ -64,17 +64,29 @@ This will then open the `App Designer` window.
 Now, `save` it and `run (F5)`. Check whether everything connects and whether the stages move accordingly.
 If you are using stages not from _Physik Instrumente_, chances are you need to modify the code for each button since the MATLAB class are, of course, inherently different.
 
-But still, it's faster than to build your own GUI right? :)
+---
+If everything works well, then on the `App Designer`'s file ribbon, click 'Package App' and follow the instructions.
 
 ### MATLAB 2016b and earlier
-I'll finish writing this at Feb 3, 2018. But essentially, quite the same with the steps above. But since I built it using MATLAB GUIDE, you have two separate files (*.fig, and *.m).
-`Design view` is equivalent to *.fig file, and `Code View` is equivalent to *.m file
+Essentially, quite the same with the steps above. But since I built it using MATLAB GUIDE, you have two separate files (*.fig, and *.m). In short, `Design view` is equivalent to *.fig file, and `Code View` is equivalent to *.m file
+
+Open the GUIDE by right clicking the *.fig file and choose `Open in GUIDE` from the file dialog.
+
+#### Changing Stage controllers
+1. Right click the button besides `Connect Stage & AFG` label, head to `View Callbacks` and choose `Callback`. It would then take you to the code. (If you encounter a warning that says _The current value of Callback has been manually modified..., ignore it.)
+2. replace everything under `function stageAFG_Callback(hObject, eventdata, handles)` with your MATLAB code for connecting to your Stages.
+3. Note that the initial variable to access the stages are `C663_X, C663_Y, C663_Z` and are defined under the function `stageConnectG( handles )`. So if you change it with your code, make sure to replace the variables accordingly.
+
+Now, `save` it and `run (F5)`. Check whether everything connects and whether the stages move accordingly.
+If you are using stages not from _Physik Instrumente_, chances are you need to modify the code for each button since the MATLAB class are, of course, inherently different.
+
+---
+If everything works well, then close the `GUIDE` window, and on the main MATLAB window, select Apps file ribbon and click 'Package App' and then follow the instructions.
 
 ## Developing
-Be wild. Add other hardwares. Create another page for your own research or need (eg, 3D scan etc)
+Be wild. Add other hardwares. Create another page for your own research or need (eg, 3D raster-scan etc)
 
 ## Contributing
-
 If you find a bug or want to request a new feature, feel free to open an issue.
 
 ## Licensing
